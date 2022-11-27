@@ -1,0 +1,99 @@
+/** GERAL *******/
+@keyframes piscar {
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+@keyframes upDown {
+    0%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+body,html, main{
+    height: 100%;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    color: black;
+}
+.anaglyph {
+    text-shadow: -0.03em 0 0 red, 0.03em 0 0 cyan;
+}
+.efeito-vidro{
+    background: rgba(255, 255, 255, 0.090);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.014);
+}
+/** MENU ****/
+header{
+    background-color: rgba(0, 0, 0, 0.904);
+    border-bottom: solid 1px rgba(58, 58, 58, 0.904);
+}
+.navbar-nav a:hover{
+    color: #F25790 !important;
+    border-bottom: solid #F25790;
+    transition: color 0.7s;
+}
+.navbar-nav .active{
+    border-bottom: solid #F25790;
+}
+/** MAIN ***/
+main{
+    background: url(./img/plano-de-fundo5.jpg);
+    background-attachment: fixed;
+}
+/** INICIO **/
+#inicio{
+    background: none;
+    height: 100%;
+    color: white;
+}
+#inicio .container{
+    height: 100%;
+}
+#inicio p{
+    font-size: 2rem;
+}
+#apresentacao{
+    padding: 10%;
+    justify-content: space-around;
+}
+#apresentacao h1::after{
+    content: "|";
+    animation: piscar 700ms infinite;
+}
+#btn-principal a{
+    color: white;
+    border: 2px solid white;
+}
+#btn-principal a:hover{
+    transition: all 0.4s linear;
+    background-color: #F2AEE7;
+    font-size: 22px;
+    
+}
+#saiba-mais{
+    height: 200px;
+}
+#saiba-mais a{
+    height: 100%;
+    color: white;
+    text-decoration: none;
+}
+#saiba-mais a:hover{
+    color: #F2AEE7;
+    transition: all 0.3s linear;
+}
+#saiba-mais i{
+    font-size: 1.8rem;
+    animation: upDown 900ms infinite alternate;
+}
+section{
+    background-color: white;
+}

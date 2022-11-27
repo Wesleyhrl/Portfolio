@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
@@ -9,14 +9,13 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
-
-
 </head>
 
 <body>
-    <header class="container">
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
+    <!--MENU-->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark shadow-sm ">
+            <div class="container">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,107 +24,149 @@
                 <div class="collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav ms-auto text-center">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link active" href="#">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#">Habilidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
+                            <a class="nav-link" href="#">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="container">
-        <section id="principal" class="row">
-            <h1 class="display-3">Wesley Henrique|</h1>
-            <p>Desenvolvedor WEB</p>
-            <div id="btn-principal">
-                <a href="https://github.com/Wesleyhrl">Github</a>
-                <a href="https://www.linkedin.com/in/wesley-henrique-60386b197/">Linkedin</a>
-            </div>
-            <div id="saiba-mais">
-                <p>Saiba mais</p>
-                <i>></i>
-            </div>
-        </section>
-        <section id="sobre" class="row">
-            <div class=" col-12  col-lg-5 col-xl-4">
-                <img class="img-fluid" src="./img/Coding-bro.png" alt="programador">
-            </div>
-
-            <div class="col-12  col-lg-7 col-xl-8">
-                <h2>Sobre Mim</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis commodi ea earum minima beatae sunt
-                    ab pariatur dolore magni officia saepe numquam animi enim rerum, vero error repellat ipsum!
-                    Eligendi!
-                    Quos harum voluptates minus alias necessitatibus perferendis sit est perspiciatis laboriosam quis
-                    ullam quas, eos dolor dolorum magnam. Atque deleniti sit pariatur incidunt nihil, saepe ipsa dolor
-                    voluptatum! Sequi, libero?</p>
-            </div>
-        </section>
-        <section id="habilidades" class="row">
-            <div class="col-12 text-center">
-                <h2>Habilidades</h2>
-                <div id="area-icones d-flex ">
-
-                    <img src="./img/html-5.png" alt="">
-                    <img src="./img/css-3.png" alt="">
-                    <img src="./img/js.png" alt="">
-                    <img src="./img/bootstrap.png" alt="">
-                    <img src="./img/php.png" alt="">
-                    <img src="./img/java.png" alt="">
-                    <img src="./img/mysql.png" alt="">
-                    <img src="./img/git.png" width="128px" alt="">
-
+    <!--/MENU-->
+    <main>
+        <!--INICIO-->
+        <section id="inicio">
+            <div class="container d-flex flex-column align-items-center">
+                <div id="apresentacao" class="mt-auto text-center">
+                    <h1 id="nome" class="anaglyph display-3">Wesley Henrique</h1>
+                    <p>Desenvolvedor WEB</p>
+                    <div id="btn-principal" class="">
+                        <a class="btn btn-lg rounded-pill me-sm-2 me-md-5 mt-2 efeito-vidro" target="_blank" href="https://github.com/Wesleyhrl"><i class="bi bi-github"></i> Github</a>
+                        <a class="btn btn-lg rounded-pill mt-2 efeito-vidro" target="_blank" href="https://www.linkedin.com/in/wesley-henrique-60386b197/"><i
+                                class="bi bi-linkedin"></i> Linkedin</a>
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, reiciendis.</p>
+                <div id="saiba-mais"class="mt-auto">
+                    <a href="#" class="text-center d-flex flex-column" >    
+                        <p>Saiba mais</p><i class="bi bi-chevron-double-down"></i>
+                    </a>
+                    
+                </div>
             </div>
         </section>
-        <section id="projetos" class="row">
-            <h2>Projetos</h2>
-        </section>
-        <section id="contato" class="row">
-            <h2>
-                Contato
-            </h2>
-            <div class="col-12 col-md-8 col-lg-7">
-                <form class="row g-3">
-                    <div class="col-md-6">
-                        <label for="inputEmail" class="form-label">Email:</label>
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Digite seu email"
-                            required>
+        <!--/INICIO-->
+        <!--SOBRE-->
+        <section id="sobre">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-12  col-lg-5 col-xl-4">
+                        <img class="img-fluid" src="./img/Coding-bro.png" alt="programador">
                     </div>
-                    <div class="col-md-6">
-                        <label for="inputName" class="form-label">Nome:</label>
-                        <input type="password" class="form-control" id="inputName" placeholder="Digite seu" required>
-                    </div>
-                    <div class="col-12">
-                        <label for="inputAddress" class="form-label">Mensagem:</label>
-                        <textarea class="form-control" id="inputMessage" rows="3" required></textarea>
 
+                    <div class="col-12  col-lg-7 col-xl-8">
+                        <h2>Sobre Mim</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis commodi ea earum minima
+                            beatae sunt
+                            ab pariatur dolore magni officia saepe numquam animi enim rerum, vero error repellat ipsum!
+                            Eligendi!
+                            Quos harum voluptates minus alias necessitatibus perferendis sit est perspiciatis laboriosam
+                            quis
+                            ullam quas, eos dolor dolorum magnam. Atque deleniti sit pariatur incidunt nihil, saepe ipsa
+                            dolor
+                            voluptatum! Sequi, libero?</p>
                     </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
-                    </div>
-                </form>
+                </div>
             </div>
-            <div class="col-12 col-md-4 col-lg-5">
-
-            </div>
-
         </section>
+        <!--/SOBRE-->
+        <!--HABILIDADES-->
+        <section id="habilidades">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2>Habilidades</h2>
+                        <div id="area-icones d-flex ">
 
+                            <img src="./img/html-5.png" alt="">
+                            <img src="./img/css-3.png" alt="">
+                            <img src="./img/js.png" alt="">
+                            <img src="./img/bootstrap.png" alt="">
+                            <img src="./img/php.png" alt="">
+                            <img src="./img/java.png" alt="">
+                            <img src="./img/mysql.png" alt="">
+                            <img src="./img/git.png" width="128px" alt="">
 
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, reiciendis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/HABILIDADES-->
+        <!--PROJETOS-->
+        <section id="projetos">
+            <div class="container">
+                <div class="row">
+                    <h2>Projetos</h2>
+                </div>
+            </div>
+        </section>
+        <!--/PROJETOS-->
+        <!--CONTATO-->
+        <section id="contato">
+            <div class="container">
+                <div class="row">
+                    <h2>
+                        Contato
+                    </h2>
+                    <div class="col-12 col-md-8 col-lg-7">
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <label for="inputEmail" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Digite seu email"
+                                    required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputName" class="form-label">Nome:</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="Digite seu"
+                                    required>
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress" class="form-label">Mensagem:</label>
+                                <textarea class="form-control" id="inputMessage" rows="3" required></textarea>
+
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-5">
+                        <i class="bi bi-envelope-at"></i><b>Email:</b>
+                        <p>wesley_henrique15@hotmail.com</p>
+                        <i class="bi bi-geo-alt-fill"></i><b>Local:</b>
+                        <p>Brasil | BH/MG</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/CONTATO-->
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+        <script src="./animacao.js"></script>
 </body>
 
 </html>
