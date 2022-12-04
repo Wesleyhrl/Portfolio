@@ -1,4 +1,4 @@
-/** GERAL *******/
+/** GERAL ************************/
 @keyframes piscar {
     0%,100%{
         opacity: 1;
@@ -43,16 +43,37 @@ header{
 .navbar-nav .active{
     border-bottom: solid #F25790;
 }
-/** MAIN ***/
+/** MAIN ***********************/
 main{
     background: url(./img/plano-de-fundo5.jpg);
     background-attachment: fixed;
 }
-/** INICIO **/
+/** SECTIONS ***************************/
+section{
+    color: white;
+    min-height: 50vh;
+    padding: 20px 0px;
+    background-color: #313030;
+}
+section h2{
+    color: #F25790;
+    margin-top: 30px;
+}
+.btn{
+    color: white;
+    border: 2px solid white;
+}
+.btn:hover{
+    transform: scale(1.1) !important;
+    background-color: #F2AEE7;
+    transition: all 0.4s linear;
+}
+/** INICIO *****************************/
 #inicio{
     background: none;
     height: 100%;
     color: white;
+    border-bottom: 1px solid #151515;
 }
 #inicio .container{
     height: 100%;
@@ -68,18 +89,8 @@ main{
     content: "|";
     animation: piscar 700ms infinite;
 }
-#btn-principal a{
-    color: white;
-    border: 2px solid white;
-}
-#btn-principal a:hover{
-    transition: all 0.4s linear;
-    background-color: #F2AEE7;
-    font-size: 22px;
-    
-}
 #saiba-mais{
-    height: 200px;
+    margin-bottom: 100px;
 }
 #saiba-mais a{
     height: 100%;
@@ -94,6 +105,43 @@ main{
     font-size: 1.8rem;
     animation: upDown 900ms infinite alternate;
 }
-section{
+/** SOBRE **************************************/
+#sobre a{
+    width: fit-content;
+}
+#sobre p{
+    letter-spacing: 1px;
+    font-size:  max(1rem , 1vw);
+}
+/** habilidades ******************************/
+#habilidades{
+    background-color: #2e2e2e;
+
+}
+#habilidades img{
+    margin: 10px;
+    filter: grayscale(100%);
+    max-height: 110px;
+    max-width: 110px;
+    padding: 20px;
     background-color: white;
+    border-radius: 20px;
+}
+#habilidades img:hover{
+    cursor:pointer; 
+    filter: grayscale(0%);
+    transition: all 0.4s linear; 
+}
+#area-icones{
+    padding: 20px 0px;
+    min-height: 32vh; 
+}
+#area-icones .row{
+    margin: 0px 10px;
+}
+.icone-color{
+    filter: grayscale(0%) !important;
+}
+.progress-bar{
+    background-color: #F25790;
 }
