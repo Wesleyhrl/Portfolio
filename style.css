@@ -9,7 +9,7 @@
 }
 @keyframes upDown {
     0%{
-        transform: translateY(100px);
+        transform: translateY(50px);
     }
     100%{
         transform: translateY(0px);
@@ -90,7 +90,7 @@ section h2{
     animation: piscar 700ms infinite;
 }
 #saiba-mais{
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 #saiba-mais a{
     height: 100%;
@@ -119,17 +119,21 @@ section h2{
 
 }
 #habilidades img{
+    display: flex ;
     margin: 10px;
-    filter: grayscale(100%);
     max-height: 110px;
     max-width: 110px;
     padding: 20px;
     background-color: white;
     border-radius: 20px;
 }
-#habilidades img:hover{
-    cursor:pointer; 
+.icone{
+    display: flex;
+    filter: grayscale(100%);
+}
+.icone:hover{
     filter: grayscale(0%);
+    cursor:pointer; 
     transition: all 0.4s linear; 
 }
 #area-icones{
@@ -144,4 +148,7 @@ section h2{
 }
 .progress-bar{
     background-color: #F25790;
+}
+p#titulo{
+    transition: all 0.8s linear !important;
 }

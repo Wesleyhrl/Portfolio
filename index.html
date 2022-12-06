@@ -80,10 +80,10 @@
                         <h2>Sobre Mim</h2>
                         <p class="">Olá, sou estudante de sistemas de informação e possuo experiencia em TI como
                             Analista de
-                            Suporte, e atualmente estou interessado em desenvolvimento Web e com muita dedicação e
-                            aprofundamento nos estudos relacionados a esta grande área pretendo seguir está carreira.
-                            Sou um grande entusiasta de Tecnologia Informação em geral, estou sempre buscando novos
-                            aprendizados e conhecimento de linguagem sobre desenvolvimento web.
+                            Suporte. Atualmente estou interessado em desenvolvimento Web, com muita dedicação e
+                            aprofundamento nos estudos relacionados a esta grande área pretendo seguir esta carreira.
+                            Sou um grande entusiasta de Tecnologia da Informação em geral, estou sempre buscando novos
+                            aprendizados e conhecimento de linguagem sobre desenvolvimento Web.
                         </p>
                         <a  class="btn btn-lg rounded-pill text-center ms-auto me-auto" download="curriculo.pdf"><i class="bi bi-file-earmark-arrow-down"></i> Curriculo</a>
                     </div>
@@ -100,16 +100,16 @@
                         <!--d-flex flex-column flex-lg-row justify-content-around align-items-center-->
                         <div id="area-icones" class="d-flex flex-row flex-lg-column justify-content-center">
                             <div class="row d-flex flex-column flex-lg-row justify-content-center align-items-center">
-                                <img src="./img/html-5.png" alt="" class="icone-color">
-                                <img src="./img/css-3.png" alt="">
-                                <img src="./img/js.png" alt="">
-                                <img src="./img/bootstrap.png" alt="">
+                                <img src="./img/html-5.png" alt="" class="icone icone-color" id="html" onclick="mudarHabilidade('html')">
+                                <img src="./img/css-3.png" alt="" class="icone" id="css"  onclick="mudarHabilidade('css')" >
+                                <img src="./img/js.png" alt="" class="icone" id="js" onclick="mudarHabilidade('js')">
+                                <img src="./img/bootstrap.png" class="icone" alt="" id="bootstrap" onclick="mudarHabilidade('bootstrap')">
                             </div>
                             <div class="row d-flex flex-column flex-lg-row justify-content-center align-items-center">
-                                <img src="./img/php.png" alt="">
-                                <img src="./img/java.png" alt="">
-                                <img src="./img/mysql.png" alt="">
-                                <img src="./img/git.png" alt="">
+                                <img src="./img/php.png" alt="" class="icone" id="php" onclick="mudarHabilidade('php')">
+                                <img src="./img/java.png" alt="" class="icone" id="java" onclick="mudarHabilidade('java')">
+                                <img src="./img/mysql.png" alt="" class="icone" id="mysql" onclick="mudarHabilidade('mysql')">
+                                <img src="./img/git.png" alt="" class="icone" id="git" onclick="mudarHabilidade('git')">
                             </div>
 
 
@@ -119,9 +119,9 @@
                 <div class="row">
                     <div class="col-3"></div>
                     <div class="col-6 text-center">
-                        <p>HTML (Linguagem de Marcação de HiperTexto)</p>
+                        <p id="titulo">HTML (Linguagem de Marcação de HiperTexto)</p>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            <div id="barra" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                                 style="width: 95%;">95%</div>
                         </div>
                     </div>
@@ -184,6 +184,7 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <script src="./animacao.js"></script>
+    <script src="./interacao.js"></script>
 </body>
 
 </html>
