@@ -85,7 +85,7 @@
                             Sou um grande entusiasta de Tecnologia da Informação em geral, estou sempre buscando novos
                             aprendizados e conhecimento de linguagem sobre desenvolvimento Web.
                         </p>
-                        <a class="btn btn-lg rounded-pill text-center ms-auto me-auto" download="curriculo.pdf"><i
+                        <a class="btn btn-lg rounded-pill text-center ms-auto me-auto efeito-vidro" download="curriculo.pdf"><i
                                 class="bi bi-file-earmark-arrow-down"></i> Curriculo</a>
                     </div>
                 </div>
@@ -98,7 +98,6 @@
                 <div class="row">
                     <div class="col-12 text-center d-flex flex-column justify-content-around">
                         <h2>Habilidades</h2>
-                        <!--d-flex flex-column flex-lg-row justify-content-around align-items-center-->
                         <div id="area-icones" class="d-flex flex-row flex-lg-column justify-content-center">
                             <div class="row d-flex flex-column flex-lg-row justify-content-center align-items-center">
                                 <img src="./img/html-5.png" alt="" class="icone icone-color" id="html"
@@ -225,35 +224,38 @@
         <section id="contato" class="bg-escuro">
             <div class="container">
                 <div class="row">
-                    <h2>
+                    <h2 class="mb-5 text-center">
                         Contato
                     </h2>
-                    <div class="col-12 col-md-8 col-lg-7">
-                        <form class="row g-3">
-                            <div class="col-md-6">
-                                <label for="inputEmail" class="form-label">Email:</label>
+                    <div class="col-12 col-md-8 col-lg-7" id="formulario">
+                        <form class=" row g-3">
+                            <div class="col-md-6 form-floating">
                                 <input type="email" class="form-control" id="inputEmail" placeholder="Digite seu email"
-                                    required>
+                                    autocomplete="off" required>
+                                <label for="inputEmail" class="form-label">Email:</label>
+                                
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 form-floating">
+                                <input type="text" class="form-control" id="inputName" placeholder="Digite seu nome"
+                                autocomplete="off"  required>
                                 <label for="inputName" class="form-label">Nome:</label>
-                                <input type="text" class="form-control" id="inputName" placeholder="Digite seu"
-                                    required>
+                                
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 form-floating">
+                                <textarea placeholder="Digite sua mensagem" class="form-control" id="inputMessage" rows="3" style="height: 100px" autocomplete="off" required></textarea>
                                 <label for="inputAddress" class="form-label">Mensagem:</label>
-                                <textarea class="form-control" id="inputMessage" rows="3" required></textarea>
+                                
 
                             </div>
                             <div class="col-12 d-flex justify-content-center">
-                                <button type="submit" class="btn btn-primary">Enviar</button>
+                                <button type="submit" class="btn rounded-pill efeito-vidro mt-2"><i class="bi bi-envelope-plus"></i> Enviar</button>
                             </div>
                         </form>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-5">
-                        <i class="bi bi-envelope-at"></i><b>Email:</b>
-                        <p>wesley_henrique15@hotmail.com</p>
-                        <i class="bi bi-geo-alt-fill"></i><b>Local:</b>
+                    <div class="col-12 col-md-4 col-lg-5" id="info">
+                        <i class="bi bi-envelope-at"></i><b> Email:</b><br>
+                        <a href="mailto:someone@microsoft.com?subject=Vim%20pelo%20seu%20portfólio">wesley_henrique15@hotmail.com</a><br>
+                        <i class="bi bi-geo-alt-fill"></i><b> Local:</b>
                         <p>Brasil | BH/MG</p>
                     </div>
                 </div>

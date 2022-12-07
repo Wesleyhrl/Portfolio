@@ -152,8 +152,6 @@ p#titulo{
     transition: all 0.8s linear !important;
 }
 /** Projetos ******************************/
-
-/** Contato ******************************/
 .carousel-control-next , .carousel-control-prev{
     width: 8%;
 }
@@ -174,4 +172,25 @@ p#titulo{
 }
 .card{
     font-size: min(3vw , 1rem);
+}
+/** Contato ******************************/
+
+.form-control{
+    background: none;
+    color: white;
+    
+}
+.form-control:focus{
+    background: none;
+    color: white;
+    box-shadow:   none !important;
+    border: solid 1px #F25790;
+    
+}
+#info i{
+    font-size: 30px;
+}
+#info a{
+    color: white;
+    text-decoration: none;
 }
