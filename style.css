@@ -27,7 +27,6 @@ body,html, main{
     background: rgba(255, 255, 255, 0.090);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.014);
 }
 /** MENU ****/
@@ -49,6 +48,9 @@ main{
     background-attachment: fixed;
 }
 /** SECTIONS ***************************/
+.bg-escuro{
+    background-color: #2e2e2e;
+}
 section{
     color: white;
     min-height: 50vh;
@@ -57,9 +59,10 @@ section{
 }
 section h2{
     color: #F25790;
-    margin-top: 30px;
+    margin-top: 30px !important;
 }
 .btn{
+    max-width: max-content;
     color: white;
     border: 2px solid white;
 }
@@ -114,10 +117,6 @@ section h2{
     font-size:  max(1rem , 1vw);
 }
 /** habilidades ******************************/
-#habilidades{
-    background-color: #2e2e2e;
-
-}
 #habilidades img{
     display: flex ;
     margin: 10px;
@@ -146,9 +145,33 @@ section h2{
 .icone-color{
     filter: grayscale(0%) !important;
 }
-.progress-bar{
+#habilidades .progress-bar{
     background-color: #F25790;
 }
 p#titulo{
     transition: all 0.8s linear !important;
+}
+/** Projetos ******************************/
+
+/** Contato ******************************/
+.carousel-control-next , .carousel-control-prev{
+    width: 8%;
+}
+.carousel{
+    margin-top: 20px;
+    padding: 10px 8%;
+}
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    background: rgba(224, 44, 110, 0.671);
+    opacity: 1;
+    transition: all 0.5s linear;
+}
+.card img{
+    max-height: 262px;
+}
+.card{
+    font-size: min(3vw , 1rem);
 }

@@ -85,14 +85,15 @@
                             Sou um grande entusiasta de Tecnologia da Informação em geral, estou sempre buscando novos
                             aprendizados e conhecimento de linguagem sobre desenvolvimento Web.
                         </p>
-                        <a  class="btn btn-lg rounded-pill text-center ms-auto me-auto" download="curriculo.pdf"><i class="bi bi-file-earmark-arrow-down"></i> Curriculo</a>
+                        <a class="btn btn-lg rounded-pill text-center ms-auto me-auto" download="curriculo.pdf"><i
+                                class="bi bi-file-earmark-arrow-down"></i> Curriculo</a>
                     </div>
                 </div>
             </div>
         </section>
         <!--/SOBRE-->
         <!--HABILIDADES-->
-        <section id="habilidades">
+        <section id="habilidades" class="bg-escuro">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center d-flex flex-column justify-content-around">
@@ -100,15 +101,20 @@
                         <!--d-flex flex-column flex-lg-row justify-content-around align-items-center-->
                         <div id="area-icones" class="d-flex flex-row flex-lg-column justify-content-center">
                             <div class="row d-flex flex-column flex-lg-row justify-content-center align-items-center">
-                                <img src="./img/html-5.png" alt="" class="icone icone-color" id="html" onclick="mudarHabilidade('html')">
-                                <img src="./img/css-3.png" alt="" class="icone" id="css"  onclick="mudarHabilidade('css')" >
+                                <img src="./img/html-5.png" alt="" class="icone icone-color" id="html"
+                                    onclick="mudarHabilidade('html')">
+                                <img src="./img/css-3.png" alt="" class="icone" id="css"
+                                    onclick="mudarHabilidade('css')">
                                 <img src="./img/js.png" alt="" class="icone" id="js" onclick="mudarHabilidade('js')">
-                                <img src="./img/bootstrap.png" class="icone" alt="" id="bootstrap" onclick="mudarHabilidade('bootstrap')">
+                                <img src="./img/bootstrap.png" class="icone" alt="" id="bootstrap"
+                                    onclick="mudarHabilidade('bootstrap')">
                             </div>
                             <div class="row d-flex flex-column flex-lg-row justify-content-center align-items-center">
                                 <img src="./img/php.png" alt="" class="icone" id="php" onclick="mudarHabilidade('php')">
-                                <img src="./img/java.png" alt="" class="icone" id="java" onclick="mudarHabilidade('java')">
-                                <img src="./img/mysql.png" alt="" class="icone" id="mysql" onclick="mudarHabilidade('mysql')">
+                                <img src="./img/java.png" alt="" class="icone" id="java"
+                                    onclick="mudarHabilidade('java')">
+                                <img src="./img/mysql.png" alt="" class="icone" id="mysql"
+                                    onclick="mudarHabilidade('mysql')">
                                 <img src="./img/git.png" alt="" class="icone" id="git" onclick="mudarHabilidade('git')">
                             </div>
 
@@ -121,8 +127,8 @@
                     <div class="col-6 text-center">
                         <p id="titulo">HTML (Linguagem de Marcação de HiperTexto)</p>
                         <div class="progress">
-                            <div id="barra" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                                style="width: 95%;">95%</div>
+                            <div id="barra" class="progress-bar progress-bar-striped progress-bar-animated"
+                                role="progressbar" style="width: 95%;">95%</div>
                         </div>
                     </div>
                     <div class="col-3"></div>
@@ -135,13 +141,88 @@
         <section id="projetos">
             <div class="container">
                 <div class="row">
-                    <h2>Projetos</h2>
+                    <h2 class="text-center">Projetos</h2>
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                        data-bs-pause="hover">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="8000">
+                                <div class="row row-cols-1 row-cols-md-2 g-4">
+                                    <a class="col" href="https://github.com/Wesleyhrl/tasks_now" target="_blank">
+                                        <div class="card text-bg-dark">
+                                            <img src="./img/tasknow.PNG" class="card-img" alt="...">
+                                            <div class="card-img-overlay text-center efeito-vidro">
+                                                <h5 class="card-title mt-md-3">Tasks Now</h5>
+                                                <p class="card-text mt-md-5">Site de criação e controle de tarefas
+                                                    pessoais
+                                                    simples, onde cada usuário pode criar seu login individual para
+                                                    acessar e criar sua tarefas.</p>
+                                                <p class="card-text mt-md-5"><small>HTML, CSS, JavaScript, Bootstrap,
+                                                        PHP,
+                                                        SQL</small></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="col" href="https://github.com/Wesleyhrl/Spotify_Clone" target="_blank">
+                                        <div class="card text-bg-dark">
+                                            <img src="./img/clone-sp.png" class="card-img" alt="...">
+                                            <div class="card-img-overlay text-center efeito-vidro">
+                                                <h5 class="card-title mt-md-3">Spotify Clone</h5>
+                                                <p class="card-text mt-md-5">Replica similar do site Spotify para fins
+                                                    de
+                                                    estudos.</p>
+                                                <p class="card-text mt-md-5"><small>HTML, CSS, Bootstrap</small></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="8000">
+                                <div class="row row-cols-1 row-cols-md-2 g-4">
+                                    <a class="col" href="https://github.com/Wesleyhrl/ProjetoFinans" target="_blank">
+                                        <div class="card text-bg-dark">
+                                            <img src="./img/finans.PNG" class="card-img" alt="...">
+                                            <div class="card-img-overlay text-center efeito-vidro">
+                                                <h5 class="card-title mt-md-3">Projeto Finans</h5>
+                                                <p class="card-text mt-md-5">Site de uma empresa fictícia de finanças.
+                                                </p>
+                                                <p class="card-text mt-md-5"><small>HTML, CSS, Bootstrap</small></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="col" href="https://github.com/Wesleyhrl/CtrlExpenses" target="_blank">
+                                        <div class="card text-bg-dark">
+                                            <img src="./img/ctrExpenses.PNG" class="card-img" alt="...">
+                                            <div class="card-img-overlay text-center efeito-vidro">
+                                                <h5 class="card-title mt-3">CtrlExpenses</h5>
+                                                <p class="card-text mt-5">Site funcional de controle de despesa
+                                                    pessoais.</p>
+                                                <p class="card-text mt-5"><small>HTML, CSS, JavaScript,
+                                                        Bootstrap</small></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <a class="btn btn-lg rounded-pill ms-auto me-auto efeito-vidro mt-4" target="_blank"
+                            href="https://github.com/Wesleyhrl?tab=repositories"><i class="bi bi-github"></i> Repositórios</a>
                 </div>
             </div>
         </section>
         <!--/PROJETOS-->
         <!--CONTATO-->
-        <section id="contato">
+        <section id="contato" class="bg-escuro">
             <div class="container">
                 <div class="row">
                     <h2>
