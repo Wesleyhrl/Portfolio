@@ -16,7 +16,7 @@
     <header class="fixed-top">
         <nav class="navbar navbar-expand-lg navbar-dark shadow-sm ">
             <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#inicio">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -24,19 +24,19 @@
                 <div class="collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav ms-auto text-center">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Início</a>
+                            <a class="nav-link" href="#inicio">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
+                            <a class="nav-link" href="#sobre">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Habilidades</a>
+                            <a class="nav-link" href="#habilidades">Habilidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Projetos</a>
+                            <a class="nav-link" href="#projetos">Projetos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link" href="#contato">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -47,9 +47,9 @@
     <main>
         <!--INICIO-->
         <section id="inicio">
-            <div class="container d-flex flex-column align-items-center">
-                <div id="apresentacao" class="mt-auto text-center">
-                    <h1 id="nome" class="anaglyph display-3">Wesley Henrique</h1>
+            <div class="container">
+                <div id="apresentacao" class="d-flex flex-column justify-content-center text-center">
+                    <h1 id="nome" class="anaglyph display-3 ">Wesley Henrique</h1>
                     <p>Desenvolvedor WEB</p>
                     <div id="btn-principal" class="">
                         <a class="btn btn-lg rounded-pill me-sm-2 me-md-5 mt-2 efeito-vidro" target="_blank"
@@ -59,12 +59,12 @@
                             Linkedin</a>
                     </div>
                 </div>
-                <div id="saiba-mais" class="mt-auto">
-                    <a href="#" class="text-center d-flex flex-column">
-                        <p>Saiba mais</p><i class="bi bi-chevron-double-down"></i>
-                    </a>
+            </div>
+            <div id="saiba-mais" class="ms-auto me-auto">
+                <a href="#sobre" class="text-center d-flex flex-column">
+                    <p>Saiba mais</p><i class="bi bi-chevron-double-down"></i>
+                </a>
 
-                </div>
             </div>
         </section>
         <!--/INICIO-->
@@ -72,21 +72,21 @@
         <section id="sobre">
             <div class="container">
                 <div class="row">
-                    <div class=" col-12  col-lg-5 col-xl-4">
+                    <div class=" col-12  col-lg-5 col-xl-4" data-anime="left">
                         <img class="img-fluid" src="./img/Coding-bro.png" alt="programador">
                     </div>
 
-                    <div class="col-12  col-lg-7 col-xl-8 d-flex flex-column justify-content-around">
-                        <h2>Sobre Mim</h2>
-                        <p class="">Olá, sou estudante de sistemas de informação e possuo experiencia em TI como
+                    <div class="col-12  col-lg-7 col-xl-8 d-flex flex-column justify-content-around" >
+                        <h2 data-anime="down">Sobre Mim</h2>
+                        <p class="" data-anime="up">Olá, sou estudante de sistemas de informação e possuo experiencia em TI como
                             Analista de
                             Suporte. Atualmente estou interessado em desenvolvimento Web, com muita dedicação e
                             aprofundamento nos estudos relacionados a esta grande área pretendo seguir esta carreira.
                             Sou um grande entusiasta de Tecnologia da Informação em geral, estou sempre buscando novos
                             aprendizados e conhecimento de linguagem sobre desenvolvimento Web.
                         </p>
-                        <a class="btn btn-lg rounded-pill text-center ms-auto me-auto efeito-vidro" download="curriculo.pdf"><i
-                                class="bi bi-file-earmark-arrow-down"></i> Curriculo</a>
+                        <a class="btn btn-lg rounded-pill text-center ms-auto me-auto efeito-vidro"
+                            download="curriculo.pdf" data-anime="up"><i class="bi bi-file-earmark-arrow-down"></i> Curriculo</a>
                     </div>
                 </div>
             </div>
@@ -97,8 +97,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center d-flex flex-column justify-content-around">
-                        <h2>Habilidades</h2>
-                        <div id="area-icones" class="d-flex flex-row flex-lg-column justify-content-center">
+                        <h2 data-anime="down">Habilidades</h2>
+                        <div id="area-icones" class="d-flex flex-row flex-lg-column justify-content-center" data-anime="left">
                             <div class="row d-flex flex-column flex-lg-row justify-content-center align-items-center">
                                 <img src="./img/html-5.png" alt="" class="icone icone-color" id="html"
                                     onclick="mudarHabilidade('html')">
@@ -121,7 +121,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" data-anime="up">
                     <div class="col-3"></div>
                     <div class="col-6 text-center">
                         <p id="titulo">HTML (Linguagem de Marcação de HiperTexto)</p>
@@ -140,9 +140,9 @@
         <section id="projetos">
             <div class="container">
                 <div class="row">
-                    <h2 class="text-center">Projetos</h2>
-                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"
-                        data-bs-pause="hover">
+                    <h2 class="text-center" data-anime="down">Projetos</h2>
+                    <div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                        data-bs-pause="hover" data-anime="left">
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="8000">
                                 <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -203,19 +203,20 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselFade"
                             data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
                     <a class="btn btn-lg rounded-pill ms-auto me-auto efeito-vidro mt-4" target="_blank"
-                            href="https://github.com/Wesleyhrl?tab=repositories"><i class="bi bi-github"></i> Repositórios</a>
+                        href="https://github.com/Wesleyhrl?tab=repositories" data-anime="left"><i class="bi bi-github"></i>
+                        Repositórios</a>
                 </div>
             </div>
         </section>
@@ -224,37 +225,40 @@
         <section id="contato" class="bg-escuro">
             <div class="container">
                 <div class="row">
-                    <h2 class="mb-5 text-center">
+                    <h2 class="text-center" data-anime="down">
                         Contato
                     </h2>
                     <div class="col-12 col-md-8 col-lg-7" id="formulario">
-                        <form class=" row g-3">
+                        <form class=" row g-3" data-anime="left">
                             <div class="col-md-6 form-floating">
                                 <input type="email" class="form-control" id="inputEmail" placeholder="Digite seu email"
                                     autocomplete="off" required>
-                                <label for="inputEmail" class="form-label">Email:</label>
-                                
+                                <label for="inputEmail" class="form-label">Email</label>
+
                             </div>
                             <div class="col-md-6 form-floating">
                                 <input type="text" class="form-control" id="inputName" placeholder="Digite seu nome"
-                                autocomplete="off"  required>
-                                <label for="inputName" class="form-label">Nome:</label>
-                                
+                                    autocomplete="off" required>
+                                <label for="inputName" class="form-label">Nome</label>
+
                             </div>
                             <div class="col-12 form-floating">
-                                <textarea placeholder="Digite sua mensagem" class="form-control" id="inputMessage" rows="3" style="height: 100px" autocomplete="off" required></textarea>
-                                <label for="inputAddress" class="form-label">Mensagem:</label>
-                                
+                                <textarea placeholder="Digite sua mensagem" class="form-control" id="inputMessage"
+                                    rows="3" style="height: 100px" autocomplete="off" required></textarea>
+                                <label for="inputAddress" class="form-label">Mensagem</label>
+
 
                             </div>
                             <div class="col-12 d-flex justify-content-center">
-                                <button type="submit" class="btn rounded-pill efeito-vidro mt-2"><i class="bi bi-envelope-plus"></i> Enviar</button>
+                                <button type="submit" class="btn rounded-pill efeito-vidro mt-2"><i
+                                        class="bi bi-envelope-plus"></i> Enviar</button>
                             </div>
                         </form>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-5" id="info">
+                    <div class="col-12 col-md-4 col-lg-5" id="info" data-anime="up">
                         <i class="bi bi-envelope-at"></i><b> Email:</b><br>
-                        <a href="mailto:someone@microsoft.com?subject=Vim%20pelo%20seu%20portfólio">wesley_henrique15@hotmail.com</a><br>
+                        <a
+                            href="mailto:wesley_henrique15@hotmail.com?subject=Vim%20pelo%20seu%20portfólio">wesley_henrique15@hotmail.com</a><br>
                         <i class="bi bi-geo-alt-fill"></i><b> Local:</b>
                         <p>Brasil | BH/MG</p>
                     </div>
@@ -263,6 +267,13 @@
         </section>
         <!--/CONTATO-->
     </main>
+    <footer>
+        <div class="container">
+            <div class="text-center">
+                <p>&copy; Desenvolvido por<strong> Wesley Henrique</strong></p>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
