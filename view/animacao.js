@@ -27,8 +27,6 @@ animeScroll();
 // Efeito ativar link do menu
 const links = document.querySelectorAll(".nav-link");
 let sections = document.querySelectorAll("section");
-console.log(links);
-console.log(sections);
 const menuScrool = ()=>{
     const topJanela = window.pageYOffset + window.innerHeight* 0.60;
     sections.forEach((e)=>{

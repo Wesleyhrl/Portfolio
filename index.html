@@ -9,6 +9,7 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./view/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -76,9 +77,10 @@
                         <img class="img-fluid" src="./assets/Coding-bro.png" alt="programador">
                     </div>
 
-                    <div class="col-12  col-lg-7 col-xl-8 d-flex flex-column justify-content-around" >
+                    <div class="col-12  col-lg-7 col-xl-8 d-flex flex-column justify-content-around">
                         <h2 data-anime="down">Sobre Mim</h2>
-                        <p class="" data-anime="up">Olá, sou estudante de sistemas de informação e possuo experiencia em TI como
+                        <p class="" data-anime="up">Olá, sou estudante de sistemas de informação e possuo experiencia em
+                            TI como
                             Analista de
                             Suporte. Atualmente estou interessado em desenvolvimento Web, com muita dedicação e
                             aprofundamento nos estudos relacionados a esta grande área pretendo seguir esta carreira.
@@ -86,7 +88,8 @@
                             aprendizados e conhecimento de linguagem sobre desenvolvimento Web.
                         </p>
                         <a class="btn btn-lg rounded-pill text-center ms-auto me-auto efeito-vidro"
-                            download="curriculo.pdf" data-anime="up"><i class="bi bi-file-earmark-arrow-down"></i> Curriculo</a>
+                            download="curriculo.pdf" data-anime="up"><i class="bi bi-file-earmark-arrow-down"></i>
+                            Curriculo</a>
                     </div>
                 </div>
             </div>
@@ -98,7 +101,8 @@
                 <div class="row">
                     <div class="col-12 text-center d-flex flex-column justify-content-around">
                         <h2 data-anime="down">Habilidades</h2>
-                        <div id="area-icones" class="d-flex flex-row flex-lg-column justify-content-center" data-anime="left">
+                        <div id="area-icones" class="d-flex flex-row flex-lg-column justify-content-center"
+                            data-anime="left">
                             <div class="row d-flex flex-column flex-lg-row justify-content-center align-items-center">
                                 <img src="./assets/html-5.png" alt="" class="icone icone-color" id="html"
                                     onclick="mudarHabilidade('html')">
@@ -109,12 +113,14 @@
                                     onclick="mudarHabilidade('bootstrap')">
                             </div>
                             <div class="row d-flex flex-column flex-lg-row justify-content-center align-items-center">
-                                <img src="./assets/php.png" alt="" class="icone" id="php" onclick="mudarHabilidade('php')">
+                                <img src="./assets/php.png" alt="" class="icone" id="php"
+                                    onclick="mudarHabilidade('php')">
                                 <img src="./assets/java.png" alt="" class="icone" id="java"
                                     onclick="mudarHabilidade('java')">
                                 <img src="./assets/mysql.png" alt="" class="icone" id="mysql"
                                     onclick="mudarHabilidade('mysql')">
-                                <img src="./assets/git.png" alt="" class="icone" id="git" onclick="mudarHabilidade('git')">
+                                <img src="./assets/git.png" alt="" class="icone" id="git"
+                                    onclick="mudarHabilidade('git')">
                             </div>
 
 
@@ -215,7 +221,8 @@
                         </button>
                     </div>
                     <a class="btn btn-lg rounded-pill ms-auto me-auto efeito-vidro mt-4" target="_blank"
-                        href="https://github.com/Wesleyhrl?tab=repositories" data-anime="left"><i class="bi bi-github"></i>
+                        href="https://github.com/Wesleyhrl?tab=repositories" data-anime="left"><i
+                            class="bi bi-github"></i>
                         Repositórios</a>
                 </div>
             </div>
@@ -229,22 +236,23 @@
                         Contato
                     </h2>
                     <div class="col-12 col-md-8 col-lg-7" id="formulario">
-                        <form class=" row g-3" data-anime="left" action="envia_email.php" method="post">
+                        <form class=" row g-3" data-anime="left" action="./model/envia_email.php" method="post">
                             <div class="col-md-6 form-floating">
-                                <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Digite seu email"
-                                    autocomplete="off" required>
+                                <input name="email" type="email" class="form-control" id="inputEmail"
+                                    placeholder="Digite seu email" autocomplete="off" required>
                                 <label for="inputEmail" class="form-label">Email</label>
 
                             </div>
                             <div class="col-md-6 form-floating">
-                                <input name="nome" type="text" class="form-control" id="inputName" placeholder="Digite seu nome"
-                                    autocomplete="off" required>
+                                <input name="nome" type="text" class="form-control" id="inputName"
+                                    placeholder="Digite seu nome" autocomplete="off" required>
                                 <label for="inputName" class="form-label">Nome</label>
 
                             </div>
                             <div class="col-12 form-floating">
-                                <textarea name="mensagem" placeholder="Digite sua mensagem" class="form-control" id="inputMessage"
-                                    rows="3" style="height: 100px" autocomplete="off" required></textarea>
+                                <textarea name="mensagem" placeholder="Digite sua mensagem" class="form-control"
+                                    id="inputMessage" rows="3" style="height: 100px" autocomplete="off"
+                                    required></textarea>
                                 <label for="inputAddress" class="form-label">Mensagem</label>
 
 
@@ -274,11 +282,34 @@
             </div>
         </div>
     </footer>
+    <!-- Modal -->
+<div class="modal fade" id="modal-email" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal-titulo" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modal-titulo">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="limparUrl()"></button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center mb-4" >
+            <p id="modal-texto" class=""></p>
+        </div>
+      </div>
+    </div>
+  </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="./view/email.js"></script>
     <script src="./view/animacao.js"></script>
     <script src="./view/interacao.js"></script>
+
 </body>
 
 </html>

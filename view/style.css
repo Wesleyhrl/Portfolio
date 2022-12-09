@@ -233,3 +233,10 @@ footer{
     color: white;
     background-color: #111111;
 }
+/** Modal ******************************/
+.modal-header{
+    background-image: linear-gradient(to bottom, #f25790, #f46faa, #f485c1);
+}
+#modal-titulo{
+ color: white;
+}
