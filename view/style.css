@@ -73,7 +73,7 @@ header{
 }
 /** MAIN ***********************/
 main{
-    background: url(./img/plano-de-fundo5.jpg);
+    background: url(../assets/plano-de-fundo5.jpg);
     background-attachment: fixed;
 }
 /** SECTIONS ***************************/
@@ -88,7 +88,7 @@ section{
 }
 section h2{
     color: #F25790;
-    margin-top: 30px !important;
+    margin-top: 40px !important;
 }
 .btn{
     max-width: max-content;
