@@ -49,6 +49,7 @@ const menuScrool = ()=>{
     });
 
 };
+menuScrool();
 window.addEventListener("scroll",()=>{
     animeScroll();
     menuScrool();

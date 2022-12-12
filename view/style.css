@@ -51,9 +51,20 @@ html,body, main ,#inicio{
     border: 1px solid rgba(255, 255, 255, 0.014);
 }
 /** MENU ****/
+
 header{
     background-color: rgba(0, 0, 0, 0.904);
     border-bottom: solid 1px rgba(58, 58, 58, 0.904);
+}
+.navbar-brand{
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+    letter-spacing: -2px;
+}
+.navbar-brand:hover{
+    color: #F25790 !important;
+    transition: color 0.8s;
 }
 .nav-item{
     width: max-content;
@@ -85,6 +96,7 @@ section{
     color: white;
     padding: 20px 0px;
     background-color: #202020;
+    border-bottom: 2px solid #151515
 }
 section h2{
     color: #F25790;
@@ -141,17 +153,29 @@ section h2{
 }
 #sobre p{
     letter-spacing: 1px;
-    font-size:  max(1rem , 1vw);
+    font-size:  clamp(1rem, 1vw, 1.5rem);
 }
 /** habilidades ******************************/
 #habilidades img{
-    display: flex ;
-    margin: 10px;
-    max-height: 110px;
-    max-width: 110px;
-    padding: 20px;
+    margin: 5px;
+    max-height: 88px;
+    max-width: 88px;
+    padding: 12px;
     background-color: white;
     border-radius: 20px;
+}
+@media (min-width: 992px) {
+    #habilidades img{
+        margin: 10px;
+        max-height: 110px;
+        max-width: 110px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 20px;
+    }
+    p#titulo{
+        font-size: 1rem !important;
+    }
 }
 .icone{
     display: flex;
@@ -177,6 +201,7 @@ section h2{
 }
 p#titulo{
     transition: all 0.8s linear !important;
+    font-size: 0.9rem;
 }
 /** Projetos ******************************/
 .carousel-control-next , .carousel-control-prev{
@@ -225,6 +250,10 @@ p#titulo{
 #info a{
     color: white;
     text-decoration: none;
+}
+#info a:hover{
+    color: #F25790;
+    transition: color 0.8s;
 }
 /** Footer ******************************/
 footer{
