@@ -18,7 +18,7 @@
     <header class="fixed-top">
         <nav class="navbar navbar-expand-lg navbar-dark shadow-sm ">
             <div class="container">
-                <a class="navbar-brand" href="#inicio">&#60; WHL &#62;</a>
+                <a class="navbar-brand" href="#inicio">&#60; WHRL &#62;</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -88,9 +88,6 @@
                             Sou um grande entusiasta de Tecnologia da Informação em geral, estou sempre buscando novos
                             aprendizados e conhecimento sobre desenvolvimento Web.
                         </p>
-                        <a class="btn btn-lg rounded-pill text-center ms-auto me-auto efeito-vidro"
-                            href="./assets/curriculo.pdf" download data-anime="up"><i class="bi bi-file-earmark-arrow-down"></i>
-                            Curriculo</a>
                     </div>
                 </div>
             </div>
@@ -109,7 +106,8 @@
                                     onclick="mudarHabilidade('html')">
                                 <img src="./assets/css-3.png" alt="css" class="icone" id="css"
                                     onclick="mudarHabilidade('css')">
-                                <img src="./assets/js.png" alt="js" class="icone" id="js" onclick="mudarHabilidade('js')">
+                                <img src="./assets/js.png" alt="js" class="icone" id="js"
+                                    onclick="mudarHabilidade('js')">
                                 <img src="./assets/bootstrap.png" class="icone" alt="bootstrap" id="bootstrap"
                                     onclick="mudarHabilidade('bootstrap')">
                             </div>
@@ -237,7 +235,7 @@
                         Contato
                     </h2>
                     <div class="col-12 col-md-7 col-lg-8" id="formulario">
-                        <form class=" row g-3" data-anime="left" action="./model/envia_email.php" method="post">
+                        <form class=" row g-3" data-anime="left" action="./api/envia_email.php" method="post">
                             <div class="col-md-6 form-floating">
                                 <input name="email" type="email" class="form-control" id="inputEmail"
                                     placeholder="Digite seu email" autocomplete="off" required>
@@ -267,7 +265,7 @@
                     <div class="col-12 col-md-5 col-lg-4" id="info" data-anime="up">
                         <i class="bi bi-envelope-at"></i><b> Email:</b><br>
                         <a
-                            href="mailto:wesley_henrique15@hotmail.com?subject=Vim%20pelo%20seu%20portfólio">wesley_henrique15@hotmail.com</a><br>
+                            href="mailto:contato.whrl@gmail.com?subject=Vim%20pelo%20seu%20portfólio">contato.whrl@gmail.com</a><br>
                         <i class="bi bi-geo-alt-fill"></i><b> Local:</b>
                         <p>Brasil | BH/MG</p>
                     </div>
@@ -284,28 +282,24 @@
         </div>
     </footer>
     <!-- Modal -->
-<div class="modal fade" id="modal-email" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal-titulo" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="modal-titulo">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="limparUrl()"></button>
+    <div class="modal fade" id="modal-email" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="modal-titulo" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modal-titulo">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        onclick="limparUrl()"></button>
+                </div>
+                <div class="modal-body d-flex flex-column align-items-center mb-4">
+                    <p id="modal-texto" class=""></p>
+                </div>
+            </div>
         </div>
-        <div class="modal-body d-flex flex-column align-items-center mb-4" >
-            <p id="modal-texto" class=""></p>
-        </div>
-      </div>
     </div>
-  </div>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
     <script src="./view/email.js"></script>
     <script src="./view/animacao.js"></script>
